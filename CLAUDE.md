@@ -4,6 +4,14 @@ A public repo of personal agent skills, installable via `npx skills@latest add g
 (the [vercel-labs/skills](https://github.com/vercel-labs/skills) tool). See `README.md`
 for the human-facing pitch; this file is about how to work *in* this repo.
 
+## Workflow
+
+Follow `CONTRIBUTING.md` for every change, including changes made by Claude
+Code itself: branch from `main` (never commit directly to `main`), develop
+on that branch, then open a PR into `main` using
+`.github/PULL_REQUEST_TEMPLATE.md`. Do this even for small repo-meta edits
+like docs or this file.
+
 ## Structure
 
 Canonical source: `skills/<category>/<name>/SKILL.md`.
