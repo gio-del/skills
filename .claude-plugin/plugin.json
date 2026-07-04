@@ -1,6 +1,7 @@
 {
   "name": "gio-del-skills",
   "skills": [
+    "./skills/engineering/develop",
     "./skills/engineering/domain-modeling",
     "./skills/engineering/grill-with-docs",
     "./skills/engineering/tdd",

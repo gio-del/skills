@@ -50,9 +50,9 @@ skill is refreshed.
 
 ## Domain modeling
 
-No `CONTEXT.md` or `docs/adr/` exist yet. When a `grill-with-docs` / domain-modeling
-session in this repo resolves a term or makes a hard-to-reverse, non-obvious,
-real-tradeoff decision about how these skills themselves work, create them
-lazily then, following the format in `skills/engineering/domain-modeling`
-(once that skill is added) or the `domain-modeling` skill's documented
-conventions.
+`docs/adr/` exists at the repo root for hard-to-reverse, non-obvious,
+real-tradeoff decisions about how these skills themselves work (see
+`docs/adr/0001-skills-compose-by-delegation.md`). `CONTEXT.md` does not yet
+exist. When a `grill-with-docs` / domain-modeling session in this repo
+resolves a term or makes that kind of decision, create or update these files
+lazily, following the `domain-modeling` skill's documented conventions.
