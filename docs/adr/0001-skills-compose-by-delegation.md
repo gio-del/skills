@@ -1,0 +1,3 @@
+# Skills compose by delegating to other skills, not duplicating their rules
+
+New skills that need another skill's behavior (e.g. `tdd`'s red-green loop, `domain-modeling`'s ADR/glossary rules) invoke that skill directly rather than inlining a copy of its rules. `grill-with-docs` established this by delegating to `/grilling` + `/domain-modeling`; `develop` follows the same pattern, delegating to `/tdd`, `/domain-modeling`, and `/verify`. This keeps each rule set in one place — a skill can't drift out of sync with a copy of itself — at the cost of requiring the composed skills to be installed alongside it.
