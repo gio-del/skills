@@ -18,6 +18,7 @@ Skills live under `skills/<category>/<name>/SKILL.md`:
 
 - `skills/engineering/` — skills for building and changing code
 - `skills/productivity/` — skills for planning, thinking, and non-code work
+- `skills/meta/` — skills for maintaining this skills repo itself (scaffolding, registry, docs)
 
 `.claude/skills` and `.agents/skills` are **not** committed — they're local
 install targets, gitignored. For your own machine, `scripts/link-skills.sh`

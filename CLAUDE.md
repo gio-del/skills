@@ -18,6 +18,7 @@ Canonical source: `skills/<category>/<name>/SKILL.md`.
 
 - `skills/engineering/` — skills for building and changing code
 - `skills/productivity/` — skills for planning and non-code work
+- `skills/meta/` — skills for maintaining this skills repo itself (scaffolding, registry, docs)
 
 `.claude/skills` and `.agents/skills` are gitignored — they're local install
 targets, not source. `scripts/link-skills.sh` symlinks every skill in `skills/`
