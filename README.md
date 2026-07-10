@@ -16,6 +16,7 @@ Pick the skills you want and which agent(s) to install them for.
 
 Skills live under `skills/<category>/<name>/SKILL.md`:
 
+- `skills/content/` — skills for producing polished, audience-facing output (slides, etc.)
 - `skills/engineering/` — skills for building and changing code
 - `skills/productivity/` — skills for planning, thinking, and non-code work
 - `skills/meta/` — skills for maintaining this skills repo itself (scaffolding, registry, docs)
