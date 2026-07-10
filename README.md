@@ -12,6 +12,16 @@ npx skills@latest add gio-del/skills
 
 Pick the skills you want and which agent(s) to install them for.
 
+### Plugin marketplace (Claude Code)
+
+If you use Claude Code and don't need the per-skill picker, install the
+whole set as a plugin instead:
+
+```
+/plugin marketplace add gio-del/skills
+/plugin install gio-del-skills@gio-del-skills
+```
+
 ## Structure
 
 Skills live under `skills/<category>/<name>/SKILL.md`:
