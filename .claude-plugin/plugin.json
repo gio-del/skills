@@ -1,5 +1,7 @@
 {
   "name": "gio-del-skills",
+  "description": "Gio's agent skills for Claude Code, covering content, engineering, productivity, and meta work.",
+  "version": "1.0.0",
   "skills": [
     "./skills/content/design-system",
     "./skills/content/slides",

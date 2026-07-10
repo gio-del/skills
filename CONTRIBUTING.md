@@ -26,3 +26,10 @@ itself — go through the same lightweight flow:
 
 This applies to every change: new skills, edits to existing skills, docs,
 scripts, and repo-meta files like this one.
+
+## Versioning
+
+Whenever a PR adds or changes a skill, bump `version` in
+`.claude-plugin/plugin.json`. `.claude-plugin/marketplace.json` has no
+`version` field of its own — it inherits from `plugin.json`, so it never
+needs a matching edit.

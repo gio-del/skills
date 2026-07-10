@@ -1,0 +1,13 @@
+{
+  "name": "gio-del-skills",
+  "owner": {
+    "name": "gio-del"
+  },
+  "plugins": [
+    {
+      "name": "gio-del-skills",
+      "source": "./",
+      "description": "Gio's agent skills for Claude Code, covering content, engineering, productivity, and meta work."
+    }
+  ]
+}
