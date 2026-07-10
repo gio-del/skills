@@ -16,6 +16,7 @@ like docs or this file.
 
 Canonical source: `skills/<category>/<name>/SKILL.md`.
 
+- `skills/content/` — skills for producing polished, audience-facing output (slides, etc.)
 - `skills/engineering/` — skills for building and changing code
 - `skills/productivity/` — skills for planning and non-code work
 - `skills/meta/` — skills for maintaining this skills repo itself (scaffolding, registry, docs)
