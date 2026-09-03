@@ -1,6 +1,6 @@
 ---
 name: develop
-description: Implement a PRD or issue end-to-end in the target repo — read its ADRs, branch, break work into vertical slices, TDD each slice, record new ADRs, commit each slice, update the tracker, and offer to open a PR. Manual invocation only.
+description: Implement a PRD or issue end-to-end in the target repo — read its ADRs, branch, break work into vertical slices, TDD each slice, record new ADRs, commit each slice, update the tracker, offer to open a PR, and close the tracker issue linked to it. Manual invocation only.
 disable-model-invocation: true
 ---
 
@@ -61,7 +61,7 @@ If a story asks for something an existing ADR rules out, stop and surface the co
 
 ## 8. Update the tracker
 
-As each story goes green, check it off in the source PRD/issue, using whatever mechanism it was read through (MCP, API, or local file edit). Mark the whole PRD/issue complete once every story lands.
+As each story goes green, check it off in the source PRD/issue, using whatever mechanism it was read through (MCP, API, or local file edit). Once every story lands, leave the issue itself open — it closes in step 11, linked to whatever development artifact comes out of step 10, rather than being closed on its own.
 
 ## 9. Commit each story as an independent vertical slice
 
@@ -77,4 +77,10 @@ Once every story is committed and the tracker is fully updated, ask the user whe
 
 If yes: look for the target repo's PR template (e.g. `.github/PULL_REQUEST_TEMPLATE.md`) and fill it from the PRD, the stories implemented, and any ADRs recorded; if no template exists, default to a Summary + Test plan body. Then run `gh pr create`.
 
-If no: stop. The branch and its commits remain as-is for the user to handle manually.
+If no: stop. The branch and its commits remain as-is for the user to handle manually, and the tracker issue stays open (see step 11) — there's no artifact yet to close it against.
+
+## 11. Close the tracker issue, linked to the artifact
+
+If the PRD/issue came from an issue tracker (not pasted text or a local file) and step 10 produced a PR, close the issue and link it to that PR, using whatever mechanism it was read through (MCP or API): the tracker's native PR-linking convention where one exists (e.g. a `Closes #<n>` reference in the PR body, which GitHub also uses to auto-close on merge), otherwise a closing comment on the issue containing the PR's URL. Don't close the issue immediately on merge instead of now — this step runs right after the PR is opened, not deferred to whenever it lands.
+
+If step 10 ended in "no PR," skip this step — leave the issue open, since there's no artifact yet to link it to.
